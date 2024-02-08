@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 90px;
+            background-color: cadetblue;
+        }
+
+        h1 { 
+            color:black;
+            font-size: 60px;
+            font-family: cursive;
+        }
+
+        form {
+            display: inline-block;
+            text-align: center;
+            padding: 60px;
+            border: 10px solid black;
+            border-radius: 90px;
+            background-color: white;
+        }
+
+        label {
+            display: block;
+            margin: 25px 40px;
+            
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0 20px 0;
+            display: inline-block;
+            border: 2px solid #ccc;
+            box-sizing: content-box;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: lightgreen;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>My University</h1>
+    <form action="login.php" method="post">
+    <label for="ruolo">Tipologia di utente:</label>
+    <select id="ruolo" name="ruolo">
+        <option value="segreteria">Segreteria</option>
+        <option value="docente">Docente</option>
+        <option value="studente">Studente</option>
+    </select>
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <br>
+    <input type="submit" value="Login">
+</form>
+</body>
+</html>
+
